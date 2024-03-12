@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas de números</title>
+</head>
+<body>
+    <h1 id="tituloH1">Lista de Números del 1-200</h1>
+    <section>
+        <form name="formNumeros">
+            <select name="selOpciones" class="selecion">
+                <option value="" hidden>Selecciona una opción</option>
+                <option value="pares">Números Pares</option>
+                <option value="impares">Numeros Impares</option>
+                <option value="NMpares">Números Pares Mayor a...</option>
+                <option value="NMimpares">Números Impares Mayor a...</option>
+            </select>
+            <input type="number" name="numero" id="num" min="1" max="200"/>
+            <button id="verBtn" type="button">Ver</button>
+        </form>
+    </section>
+</body>
+</html>
