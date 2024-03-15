@@ -4,21 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Listas de números</title>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
     <h1 id="tituloH1">Lista de Números del 1-200</h1>
     <section>
         <form name="formNumeros">
-            <select name="selOpciones" class="selecion">
+            <select id="opciones" class="seleccion">
                 <option value="" hidden>Selecciona una opción</option>
                 <option value="pares">Números Pares</option>
                 <option value="impares">Numeros Impares</option>
                 <option value="NMpares">Números Pares Mayor a...</option>
                 <option value="NMimpares">Números Impares Mayor a...</option>
             </select>
-            <input type="number" name="numero" id="num" min="1" max="199"/>
-            <button id="verBtn">Ver</button>
+            <section id="inputContainer" class="hidden">
+                <input type="number" name="num" id="numero">
+                <button id="verBtn" type="button">Ver</button>
+            </section>
         </form>
     </section>
+    <section name="resultados">
+    </section>
+    <script src="index.js"></script>
 </body>
 </html>
