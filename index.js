@@ -45,6 +45,10 @@ document.getElementById('opciones').addEventListener('click', function() {
     resultadoList.innerHTML = '';
     var opcionSeleccionada = document.getElementById('opciones').value;
     var numeroInput = parseInt(document.getElementById('numero').value);
+    if (opcionSeleccionada === 'pares' || opcionSeleccionada === 'impares') 
+{
+        funcion_ver(opcionSeleccionada, numeroInput, resultadoList);
+    }
 });
 
 
