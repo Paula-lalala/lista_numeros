@@ -15,3 +15,13 @@ h1 {
 .hidden {
     display: none;
 }
+
+#resultado {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columnas */
+    gap: 10px; /* Espacio entre elementos */
+}
+
+#resultado li {
+    margin-bottom: 5px;
+}
