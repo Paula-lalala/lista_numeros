@@ -37,5 +37,8 @@ function mostrarLista(opcionSeleccionada) {
     resultadoList.append(...elementosLI);
 }
 
+document.getElementById('verBtn').addEventListener('click', function() {
+    var opcionSeleccionada = document.getElementById('opciones').value;
+});
 
 
