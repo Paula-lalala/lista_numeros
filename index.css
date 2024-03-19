@@ -1,4 +1,9 @@
-body {
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 20px;
@@ -47,6 +52,13 @@ h1 {
     border-radius: 5px;
     text-align: center;
 }
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
 
 
 
