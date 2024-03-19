@@ -37,8 +37,37 @@ function mostrarLista(opcionSeleccionada) {
     resultadoList.append(...elementosLI);
 }
 
+function showModal() {
+    var modal = document.getElementById('modal');
+    modal.style.display = 'block';
+
+    var closeButton = document.querySelector('.close');
+    closeButton.addEventListener('click', function() {
+        modal.style.display = 'none';
+    });
+
+    var acceptButton = document.getElementById('accept-button');
+    acceptButton.addEventListener('click', function() {
+        modal.style.display = 'none';
+        location.reload(); // Refrescar la página
+    });
+
+        window.addEventListener('click', function(event) {
+        if (event.target === modal) {
+            modal.style.display = 'none';
+        }
+    });
+}
+
 document.getElementById('verBtn').addEventListener('click', function() {
     var opcionSeleccionada = document.getElementById('opciones').value;
+
+    if (isNaN(numeroInput) || (opcionSeleccionada ==='NMpares' && numeroInput>199) || (opcionSeleccionada ==='NMimpares' && numeroInput >198)
+     || numeroInput < 1) {
+        showModal();
+    } else {
+    mostrarLista(opcionSeleccionada);
+    }
 });
 
 
