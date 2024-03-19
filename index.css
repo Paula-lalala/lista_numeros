@@ -1,22 +1,23 @@
-.close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-}body {
-    font-family: Arial, sans-serif;
+body {
+    font-family: "Coiny", Arial, sans-serif;
     margin: 0;
     padding: 20px;
+    background-color: #f0f0f0; 
 }
 
 h1 {
     text-align: center;
+    color: #ffffff; 
+    background-color: #000000; 
+    padding: 10px; 
+    border-radius: 10px; 
 }
 
 .selector {
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
 }
-
 .hidden {
     display: none;
 }
