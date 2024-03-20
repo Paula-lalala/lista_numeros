@@ -109,5 +109,11 @@ h1 {
     text-decoration: none;
     cursor: pointer;
 }
+    .coiny-regular {
+    font-family: "Coiny", system-ui;
+    font-weight: 400;
+    font-style: normal;
+  }
+
 
 
