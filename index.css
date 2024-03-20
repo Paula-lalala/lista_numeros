@@ -2,43 +2,46 @@ body {
     font-family: "Coiny", Arial, sans-serif;
     margin: 0;
     padding: 20px;
-    background-color: #f0f0f0; 
-    color: #ffffff;
+    background-color: #f0f0f0; /* Color de fondo para la página */
+    color: #ffffff; /* Color de texto predeterminado */
 }
 
 h1 {
     text-align: center;
-    color: #ffffff; 
-    background-color: #000000; 
-    padding: 10px; 
-    border-radius: 10px; 
+    color: #ffffff; /* Color de texto para el encabezado */
+    background-color: #000000; /* Color de fondo para el encabezado */
+    padding: 10px; /* Espaciado interno del encabezado */
+    border-radius: 10px; /* Bordes redondeados para el encabezado */
 }
 
 .selector {
     display: flex;
     justify-content: center;
-    margin-top: 20px;
+    margin-top: 20px; /* Margen superior */
 }
+
 .hidden {
     display: none;
 }
+
 .seleccion {
-    text-align: center;
-    border-radius: 20px;
-    padding: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    width: 200px;
+    border-radius: 20px; /* Bordes redondeados para el selector */
+    padding: 10px; /* Espaciado interno del selector */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave hacia arriba */
+}
 
 .seleccion option {
-    border-radius: 10px; 
-    padding: 10px; 
-    transition: background-color 0.3s, color 0.3s; 
+    border-radius: 10px; /* Bordes redondeados para las opciones */
+    padding: 10px; /* Espaciado interno de las opciones */
+    transition: background-color 0.3s, color 0.3s; /* Transición suave para el cambio de color */
 }
 
 .seleccion option:hover {
-    background-color: #000000;
-    color: #ffffff; 
+    background-color: #000000; /* Color de fondo al pasar el mouse */
+    color: #ffffff; /* Color de texto al pasar el mouse */
 }
+
+
 #inputContainer {
     margin-top: 20px;
     text-align: center;
@@ -85,6 +88,7 @@ h1 {
     margin-bottom: 10px; /* Espaciado entre elementos de la lista */
 }
 
+/* Estilo para el modal */
 .modal {
     display: none;
     position: fixed;
@@ -96,7 +100,8 @@ h1 {
     overflow: auto;
     background-color: rgba(0, 0, 0, 0.4);
 }
-    
+
+/* Contenido del modal */
 .modal-content {
     background-color: #fefefe;
     margin: 15% auto;
@@ -107,7 +112,8 @@ h1 {
     border-radius: 5px;
     text-align: center;
 }
-    
+
+/* Botón de cerrar (X) */
 .close {
     color: #aaa;
     float: right;
@@ -121,7 +127,8 @@ h1 {
     text-decoration: none;
     cursor: pointer;
 }
-    .coiny-regular {
+
+.coiny-regular {
     font-family: "Coiny", system-ui;
     font-weight: 400;
     font-style: normal;
