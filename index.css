@@ -22,11 +22,49 @@ h1 {
 .hidden {
     display: none;
 }
+.seleccion {
+    text-align: center;
+    border-radius: 20px;
+    padding: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 200px;
+
+.seleccion option {
+    border-radius: 10px; 
+    padding: 10px; 
+    transition: background-color 0.3s, color 0.3s; 
+}
+
+.seleccion option:hover {
+    background-color: #000000;
+    color: #ffffff; 
+}
+ #inputContainer {
+    margin-top: 20px; 
+    text-align: center;
+}
+
+#inputContainer input {    
+    border-radius: 20px;
+    padding: 10px; 
+}
+
+#verBtn {
+    border-radius: 20px; 
+    padding: 10px 20px;
+    background-color: #000000; 
+    color: #ffffff; 
+    margin-top: 10px; 
+}
+
+#listaSection {
+    margin-top: 20px;
+}
 
 #resultado {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* 4 columnas */
-    gap: 10px; /* Espacio entre elementos */
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 10px; 
 }
 
 #resultado li {
