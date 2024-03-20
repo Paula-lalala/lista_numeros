@@ -62,13 +62,17 @@ h1 {
 }
 
 #resultado {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr); 
-    gap: 10px; 
+    list-style-type: none;
+    padding: 10px;
+    background-color: #000000;
+    border-radius: 10px;
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: flex-start; 
 }
-
 #resultado li {
-    margin-bottom: 5px;
+    margin-right: 10px;
+    margin-bottom: 10px; 
 }
 
 .modal {
